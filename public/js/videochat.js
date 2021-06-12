@@ -63,7 +63,7 @@ function updateUserList(socketIds) {
   });
 }
 
-const socket = io.connect("10.10.11.162:5000");
+const socket = io.connect("10.10.11.162:8000");
 
 socket.on("update-user-list", ({ users }) => {
   updateUserList(users);

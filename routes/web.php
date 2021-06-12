@@ -15,13 +15,30 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+})->name('welcome');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+
+Route::get('/videochat', function () {
+    return view('videochat');
+})->middleware(['auth'])->name('videochat');
 
 require __DIR__.'/auth.php';
+
+Route::get('/members', function () {
+    return view('members');
+})->middleware(['auth'])->name('members');
+
+Route::get('/profile', function () {
+    return view('profile');
+})->middleware(['auth'])->name('profile');
+
+Route::get('/active-group', function () {
+    return view('active-group');
+})->middleware(['auth'])->name('active-group');
+
+Route::view('/pricing-plan', 'pricing-plan')->name('pricing-plan');
+Route::view('/blog ', 'blog')->name('blog');
+Route::view('/contact', 'contact')->name('contact');
+Route::view('/blog-single', 'blog-single')->name('blog-single');
+Route::view('/404  ', '404')->name('404');
+Route::view('/active-group', 'active-group')->name('active-group');

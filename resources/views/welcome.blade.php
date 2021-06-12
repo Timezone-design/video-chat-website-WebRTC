@@ -126,39 +126,39 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="{{route('welcome')}}">
                             <img src="{{ url('images/logo/logo.png') }}" alt="logo">
                         </a>
                     </div>
                     <div class="menu-area">
                         <ul class="menu">
                             <li>
-                                <a href="{{route('dashboard')}}">Home</a>
+                                <a href="{{route('welcome')}}">Home</a>
                             </li>
 
                             <li>
                                 <a href="#0">Features</a>
                                 <ul class="submenu">
-                                    <li><a href="members.html">All Members</a></li>
-                                    <li><a href="profile.html">Member Profile</a></li>
+                                    <li><a href="{{route('members')}}">All Members</a></li>
+                                    <li><a href="{{route('profile')}}">Member Profile</a></li>
                                     <li><a href="{{ route('login') }}">LOGIN</a></li>
                                     <li><a href="{{ route('register') }}">SIGNUP</a></li>
-                                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
+                                    <li><a href="{{route('pricing-plan')}}">Pricing Plan</a></li>
+                                    <li><a href="{{route('404')}}">404 Page</a></li>
 
                                 </ul>
                             </li>
                             <li>
-                                <a href="active-group.html">Community</a>
+                                <a href="{{route('active-group')}}">Community</a>
                             </li>
                             <li>
-                                <a href="#0">Blog</a>
+                                <a href="{{route('blog')}}">Blog</a>
                                 <ul class="submenu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-single.html">Blog Single</a></li>
+                                    <li><a href="{{route('blog')}}">Blog</a></li>
+                                    <li><a href="{{route('blog-single')}}">Blog Single</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{ route('contact') }}">Contact</a></li>
                             <li><a href="{{ route('login') }}">LOGIN</a></li>
                             <li><a href="{{ route('register') }}">SIGN UP</a></li>
                             
@@ -319,7 +319,7 @@
                                     <img src=" /images/member/01.jpg" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Andrea Guido</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Andrea Guido</a> </h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -332,7 +332,7 @@
                                     <img src=" {{url('images/member/02.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Gihan-Fernando</a></h6>
+                                    <h6><a href="{{route('profile')}}">Gihan-Fernando</a></h6>
                                     <p>Active 2 Day</p>
                                 </div>
                             </div>
@@ -345,7 +345,7 @@
                                     <img src=" {{url('images/member/03.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Sweet Admin</a></h6>
+                                    <h6><a href="{{route('profile')}}">Sweet Admin</a></h6>
                                     <p>Active 3 Day</p>
                                 </div>
                             </div>
@@ -358,7 +358,7 @@
                                     <img src=" {{url('images/member/04.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Gyan-Baffour</a></h6>
+                                    <h6><a href="{{route('profile')}}">Gyan-Baffour</a></h6>
                                     <p>Active 5 Day</p>
                                 </div>
                             </div>
@@ -371,7 +371,7 @@
                                     <img src="{{url('images/member/05.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Teszt Eleking</a></h6>
+                                    <h6><a href="{{route('profile')}}">Teszt Eleking</a></h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -384,7 +384,7 @@
                                     <img src=" {{url('images/member/06.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Zeahra Guido</a>
+                                    <h6><a href="{{route('profile')}}">Zeahra Guido</a>
                                     </h6>
                                     <p>Active 1 Day</p>
                                 </div>
@@ -568,11 +568,11 @@
                                     <img src=" {{url('images/story/01.jpg')}}" alt="img">
                                 </div>
                                 <div class="lab-content">
-                                    <h4><a href="blog-single.html">Image Post Formate</a></h4>
+                                    <h4><a href="{{route('blog-single')}}">Image Post Formate</a></h4>
                                     <p>Seamlesly evolve unique web-readiness with
                                         Collabors atively fabricate best of breed and
                                         apcations through </p>
-                                    <a href="blog-single.html" class="lab-btn"><i class="icofont-circled-right"></i>
+                                    <a href="{{route('blog-single')}}" class="lab-btn"><i class="icofont-circled-right"></i>
                                         Read More</a>
                                 </div>
                             </div>
@@ -585,11 +585,11 @@
                                     <img src=" {{url('images/story/02.jpg')}}" alt="img">
                                 </div>
                                 <div class="lab-content">
-                                    <h4><a href="blog-single.html">Couple Of Month</a></h4>
+                                    <h4><a href="{{route('blog-single')}}">Couple Of Month</a></h4>
                                     <p>Seamlesly evolve unique web-readiness with
                                         Collabors atively fabricate best of breed and
                                         apcations through </p>
-                                    <a href="blog-single.html" class="lab-btn"><i class="icofont-circled-right"></i>
+                                    <a href="{{route('blog-single')}}" class="lab-btn"><i class="icofont-circled-right"></i>
                                         Read More</a>
                                 </div>
                             </div>
@@ -602,11 +602,11 @@
                                     <img src=" {{url('images/story/03.jpg')}}" alt="img">
                                 </div>
                                 <div class="lab-content">
-                                    <h4><a href="blog-single.html">Media For Blog Article</a></h4>
+                                    <h4><a href="{{route('blog-single')}}">Media For Blog Article</a></h4>
                                     <p>Seamlesly evolve unique web-readiness with
                                         Collabors atively fabricate best of breed and
                                         apcations through </p>
-                                    <a href="blog-single.html" class="lab-btn"><i class="icofont-circled-right"></i>
+                                    <a href="{{route('blog-single')}}" class="lab-btn"><i class="icofont-circled-right"></i>
                                         Read More</a>
                                 </div>
                             </div>
@@ -644,7 +644,7 @@
                                     <img src=" {{url('images/member/01.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Johanna</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Johanna</a> </h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -657,7 +657,7 @@
                                     <img src=" {{url('images/member/03.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Selinae</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Selinae</a> </h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -670,7 +670,7 @@
                                     <img src=" {{url('images/member/02.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Andrea Guido</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Andrea Guido</a> </h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -683,7 +683,7 @@
                                     <img src=" {{url('images/member/04.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Rocky deo</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Rocky deo</a> </h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -696,7 +696,7 @@
                                     <img src=" {{url('images/member/05.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Jhon doe</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Jhon doe</a> </h6>
                                     <p>Active 5 Day</p>
                                 </div>
                             </div>
@@ -709,7 +709,7 @@
                                     <img src=" {{url('images/member/06.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Angelina</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Angelina</a> </h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -722,7 +722,7 @@
                                     <img src=" {{url('images/member/07.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Andrea Guido</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Andrea Guido</a> </h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -735,7 +735,7 @@
                                     <img src=" {{url('images/member/08.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Jene Aiko</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Jene Aiko</a> </h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -748,7 +748,7 @@
                                     <img src=" {{url('images/member/09.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Anna haek</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Anna haek</a> </h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -761,7 +761,7 @@
                                     <img src=" {{url('images/member/10.jpg')}}" alt="member-img">
                                 </div>
                                 <div class="lab-content">
-                                    <h6><a href="profile.html">Andrean Puido</a> </h6>
+                                    <h6><a href="{{route('profile')}}">Andrean Puido</a> </h6>
                                     <p>Active 1 Day</p>
                                 </div>
                             </div>
@@ -802,7 +802,7 @@
                                         <li><img src=" {{url('images/group/group-mem/06.png')}}" alt="member-img"></li>
                                         <li class="bg-theme">12+</li>
                                     </ul>
-                                    <div class="test"> <a href="active-group.html" class="lab-btn"> <i
+                                    <div class="test"> <a href="{{route('active-group')}}" class="lab-btn"> <i
                                                 class="icofont-users-alt-5"></i>View Group</a></div>
                                 </div>
                             </div>
@@ -827,7 +827,7 @@
                                         <li><img src=" {{url('images/group/group-mem/06.png')}}" alt="member-img"></li>
                                         <li class="bg-theme">12+</li>
                                     </ul>
-                                    <div class="test"> <a href="active-group.html" class="lab-btn"> <i
+                                    <div class="test"> <a href="{{route('active-group')}}" class="lab-btn"> <i
                                                 class="icofont-users-alt-5"></i>View Group</a></div>
                                 </div>
                             </div>
@@ -852,7 +852,7 @@
                                         <li><img src=" {{url('images/group/group-mem/06.png')}}" alt="member-img"></li>
                                         <li class="bg-theme">12+</li>
                                     </ul>
-                                    <div class="test"> <a href="active-group.html" class="lab-btn"> <i
+                                    <div class="test"> <a href="{{route('active-group')}}" class="lab-btn"> <i
                                                 class="icofont-users-alt-5"></i>View Group</a></div>
                                 </div>
                             </div>
@@ -877,7 +877,7 @@
                                         <li><img src=" {{url('images/group/group-mem/06.png')}}" alt="member-img"></li>
                                         <li class="bg-theme">12+</li>
                                     </ul>
-                                    <div class="test"> <a href="active-group.html" class="lab-btn"> <i
+                                    <div class="test"> <a href="{{route('active-group')}}" class="lab-btn"> <i
                                                 class="icofont-users-alt-5"></i>View Group</a></div>
                                 </div>
                             </div>
@@ -1002,7 +1002,7 @@
                                 Procedur Arramin</p>
                             <div class="client-info">
                                 <div class="name-desi">
-                                    <h6><a href="profile.html">Somrat Islam </a></h6>
+                                    <h6><a href="{{route('profile')}}">Somrat Islam </a></h6>
                                     <span>UI Designer</span>
                                 </div>
                                 <div class="rating">
@@ -1168,7 +1168,7 @@
                                                         alt="footer-widget-img"></a>
                                             </div>
                                             <div class="lab-content">
-                                                <h6><a href="blog-single.html">Enable Seamin Matera Forin And Our
+                                                <h6><a href="{{route('blog-single')}}">Enable Seamin Matera Forin And Our
                                                         Orthonal Create Vortals.</a></h6>
                                                 <p>July 23, 2021</p>
                                             </div>
@@ -1181,7 +1181,7 @@
                                                         alt="footer-widget-img"></a>
                                             </div>
                                             <div class="lab-content">
-                                                <h6><a href="blog-single.html">Dynamca Network Otuitive Catays For
+                                                <h6><a href="{{route('blog-single')}}">Dynamca Network Otuitive Catays For
                                                         Plagiarize Mindshare After</a></h6>
                                                 <p>July 23, 2021</p>
                                             </div>
@@ -1194,7 +1194,7 @@
                                                         alt="footer-widget-img"></a>
                                             </div>
                                             <div class="lab-content">
-                                                <h6><a href="blog-single.html">Dynamca Network Otuitive Catays For
+                                                <h6><a href="{{route('blog-single')}}">Dynamca Network Otuitive Catays For
                                                         Plagiarize Mindshare After</a></h6>
                                                 <p>July 23, 2021</p>
                                             </div>
@@ -1232,7 +1232,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="footer-bottom-content text-center">
-                            <p>&copy;2021 <a href="index.html">TuruLav</a> -Best For Dating HTML Template.</p>
+                            <p>&copy;2021 <a href="{{route('welcome')}}">TuruLav</a> -Best For Dating HTML Template.</p>
                         </div>
                     </div>
                 </div>

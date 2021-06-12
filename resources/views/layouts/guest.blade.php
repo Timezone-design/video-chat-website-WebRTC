@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ url('css/app.css') }}">
         <link rel="stylesheet" href="{{ url('css/animate.css') }}">
         <link rel="stylesheet" href="{{url('css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{url('css/icofont.min.css')}}">
@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="{{url('css/style.css')}}">
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ url('js/app.js') }}" defer></script>
         
     </head>
     <body>
@@ -72,7 +72,7 @@
                     <div class="menu-area">
                         <ul class="menu">
                             <li>
-                                <a href="{{ route('dashboard') }}">Home</a>
+                                <a href="{{ route('videochat') }}">Home</a>
                             </li>
 
                             <li>
