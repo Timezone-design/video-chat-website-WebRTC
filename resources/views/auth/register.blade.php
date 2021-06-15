@@ -9,12 +9,12 @@
             @csrf
             <!-- Name -->
             <div class="form-group">
-                <input id="name" type="text" placeholder="User Name" name="name" required autofocus />
+                <input id="name" type="text" placeholder="User Name" name="name" value="{{ old('name') }}" required autofocus />
             </div>
 
             <!-- Email Address -->
             <div class="form-group">
-                        <input id="email" type="text" placeholder="Email" name="email" required />
+                <input id="email" type="text" placeholder="Email" name="email" value="{{ old('email') }}" required />
             </div>
 
             <!-- Password -->

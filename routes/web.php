@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\WelcomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+// Route::get('/', [WelcomeController::class], 'index')->name('welcome');
 
+Route::view('/', 'welcome')->name('welcome');
 
 Route::get('/videochat', function () {
     return view('videochat');
@@ -24,21 +25,17 @@ Route::get('/videochat', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/members', function () {
-    return view('members');
-})->middleware(['auth'])->name('members');
 
-Route::get('/profile', function () {
-    return view('profile');
-})->middleware(['auth'])->name('profile');
+Route::middleware(['auth'])->group(function() {
+    Route::get('/members', [App\Http\Controllers\MemberController::class, 'index'])->name('members');
+    Route::get('/profile', function () {
+        return view('profile');
+    })->name('profile');
+    Route::view('/pricing-plan', 'pricing-plan')->name('pricing-plan');
+    Route::view('/active-group', 'active-group')->name('active-group');
+    Route::view('/contact', 'contact')->name('contact');
+});
 
-Route::get('/active-group', function () {
-    return view('active-group');
-})->middleware(['auth'])->name('active-group');
-
-Route::view('/pricing-plan', 'pricing-plan')->name('pricing-plan');
-Route::view('/blog ', 'blog')->name('blog');
-Route::view('/contact', 'contact')->name('contact');
+Route::view('/blog', 'blog')->name('blog');
 Route::view('/blog-single', 'blog-single')->name('blog-single');
-Route::view('/404  ', '404')->name('404');
-Route::view('/active-group', 'active-group')->name('active-group');
+Route::view('/404', '404')->name('404');

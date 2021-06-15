@@ -12,7 +12,7 @@
             @csrf
                 <!-- Email Address -->
                 <div class="form-group">
-                        <input id="email" type="text" placeholder="Email" name="email" required />
+                        <input id="email" type="text" placeholder="Email" name="email" value="{{ old('email') }}" required />
                     </div>
 
                 <!-- Password -->

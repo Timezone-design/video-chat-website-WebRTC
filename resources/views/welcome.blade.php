@@ -131,7 +131,7 @@
                         </a>
                     </div>
                     <div class="menu-area">
-                        <ul class="menu">
+                        <ul class="menu" style="align-items: center;">
                             <li>
                                 <a href="{{route('welcome')}}">Home</a>
                             </li>
@@ -141,8 +141,6 @@
                                 <ul class="submenu">
                                     <li><a href="{{route('members')}}">All Members</a></li>
                                     <li><a href="{{route('profile')}}">Member Profile</a></li>
-                                    <li><a href="{{ route('login') }}">LOGIN</a></li>
-                                    <li><a href="{{ route('register') }}">SIGNUP</a></li>
                                     <li><a href="{{route('pricing-plan')}}">Pricing Plan</a></li>
                                     <li><a href="{{route('404')}}">404 Page</a></li>
 
@@ -159,10 +157,20 @@
                                 </ul>
                             </li>
                             <li><a href="{{ route('contact') }}">Contact</a></li>
-                            <li><a href="{{ route('login') }}">LOGIN</a></li>
-                            <li><a href="{{ route('register') }}">SIGN UP</a></li>
-                            
-                        </ul>
+                            <li><a href="{{ route('videochat') }}">VideoChat</a></li>
+                         </ul>
+                            @auth
+                            <form action="{{ route('logout') }}" method='post'>
+                                @csrf
+                                <button type="submit" style="border: none; padding:10px; display: inline-block; color: #df314d;
+    border-radius: 2px 0 0 2px;"><i class="icofont-user"></i>LOG OUT</button>
+                          
+                            </form>
+                            @else
+                            <a href="{{route('login')}}" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
+                        <a href="{{route('register')}}" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a>
+                            @endauth
+                        
 
 
                         <!-- toggle icons -->

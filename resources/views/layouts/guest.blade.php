@@ -72,32 +72,31 @@
                     <div class="menu-area">
                         <ul class="menu">
                             <li>
-                                <a href="{{ route('videochat') }}">Home</a>
+                                <a href="{{ route('welcome') }}">Home</a>
                             </li>
 
                             <li>
                                 <a href="#0">Features</a>
                                 <ul class="submenu">
-                                    <li><a href="members.html">All Members</a></li>
-                                    <li><a href="profile.html">Member Profile</a></li>
-                                    <li><a href="{{ route('login') }}">Login</a></li>
-                                    <li><a href="{{ route('register') }}" class="active">Sign Up</a></li>
-                                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
+                                    <li><a href="{{route('members')}}">All Members</a></li>
+                                    <li><a href="{{route('profile')}}">Member Profile</a></li>
+                                    <li><a href="{{route('pricing-plan')}}">Pricing Plan</a></li>
+                                    <li><a href="{{route('404')}}">404 Page</a></li>
 
                                 </ul>
                             </li>
                             <li>
-                                <a href="active-group.html">Community</a>
+                                <a href="{{route('active-group')}}">Community</a>
                             </li>
                             <li>
                                 <a href="#0">Blog</a>
                                 <ul class="submenu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-single.html">Blog Single</a></li>
+                                    <li><a href="{{route('blog')}}">Blog</a></li>
+                                    <li><a href="{{route('blog-single')}}">Blog Single</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{route('contact')}}">Contact</a></li>
+                            <li><a href="{{ route('videochat') }}">VideoChat</a></li>
                         </ul>
                         <a href="{{ route('login') }}"class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
                         <a href="{{ route('register') }}" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a>
