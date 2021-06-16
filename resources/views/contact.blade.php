@@ -103,14 +103,13 @@
                                 </ul>
                             </li>
                             <li><a href="{{route('contact')}}" class="active">Contact</a></li>
-                            <li><a href="{{ route('videochat') }}">VideoChat</a></li>
                         </ul>
                         @auth
                             <form action="{{ route('logout') }}" method='post'>
                                 @csrf
                                 <button type="submit" style="border: none; padding:10px; display: inline-block; color: #df314d;
     border-radius: 2px 0 0 2px;"><i class="icofont-user"></i>LOG OUT</button>
-                          
+
                             </form>
                             @else
                             <a href="{{route('login')}}" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>

@@ -80,7 +80,7 @@ socket.on("remove-user", ({ socketId }) => {
 socket.on("call-made", async data => {
   if (getCalled) {
     const confirmed = confirm(
-      `User "Socket: ${data.socket}" wants to call you. Do accept this call?`
+      `User: "${data.socket}" wants to call you. Do accept this call?`
     );
 
     if (!confirmed) {

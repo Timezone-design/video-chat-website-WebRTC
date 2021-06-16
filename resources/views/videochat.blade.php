@@ -32,6 +32,9 @@
           <h2 class="talk-info" id="talking-with-info">
             Select active user on the left menu.
           </h2>
+          <h2 class="talk-info" style="float: right;">
+            <a href="{{route('members')}}">End VideoCall</a>
+          </h2>
           <div class="video-container">
             <video autoplay class="remote-video" id="remote-video"></video>
             <video autoplay muted class="local-video" id="local-video"></video>

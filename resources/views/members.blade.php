@@ -187,7 +187,6 @@
                                 </ul>
                             </li>
                             <li><a href="{{route('contact')}}">Contact</a></li>
-                            <li><a href="{{ route('videochat') }}">VideoChat</a></li>
                         </ul>
                         @auth
                             <form action="{{ route('logout') }}" method='post'>

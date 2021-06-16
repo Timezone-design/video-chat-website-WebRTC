@@ -20,7 +20,7 @@
 
         <!-- Scripts -->
         <script src="{{ url('js/app.js') }}" defer></script>
-        
+
     </head>
     <body>
                 <!-- ==========Header Section Starts Here========== -->
@@ -96,7 +96,6 @@
                                 </ul>
                             </li>
                             <li><a href="{{route('contact')}}">Contact</a></li>
-                            <li><a href="{{ route('videochat') }}">VideoChat</a></li>
                         </ul>
                         <a href="{{ route('login') }}"class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
                         <a href="{{ route('register') }}" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a>
@@ -125,12 +124,12 @@
                     <div class="page-title">
                         <h2>TuruLav Registation</h2>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </section>
-    <!-- ==========Page Header Section Ends Here========== -->    
+    <!-- ==========Page Header Section Ends Here========== -->
 
     <div class="login-section padding-tb">
 
